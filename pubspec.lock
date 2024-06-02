@@ -17,6 +17,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  bootstrap_flutter:
+    dependency: "direct main"
+    description:
+      name: bootstrap_flutter
+      sha256: b6d571a3e3147e93a8a11a092f814030f3631b452e0ed609003484cf41a912fc
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
+  carousel_slider:
+    dependency: "direct main"
+    description:
+      name: carousel_slider
+      sha256: "9c695cc963bf1d04a47bd6021f68befce8970bcd61d24938e1fb0918cf5d9c42"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.2.1"
   characters:
     dependency: transitive
     description:
@@ -49,6 +65,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
+  day_night_switcher:
+    dependency: "direct main"
+    description:
+      name: day_night_switcher
+      sha256: "37354e55fdc0b49d1bea863121cc5a99ab952669f4f349cdd7fe78de2e62a72a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.0+1"
   fake_async:
     dependency: transitive
     description:
@@ -57,11 +81,27 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.1"
+  flame:
+    dependency: "direct main"
+    description:
+      name: flame
+      sha256: da1812e2f17a8ffd5d43ea6a83137794e7f482bcf50419bc9847b8efdb39f791
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.17.0"
   flutter:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_hsvcolor_picker:
+    dependency: "direct main"
+    description:
+      name: flutter_hsvcolor_picker
+      sha256: ea5868dbb1c840ef502bbf60168b26e18eab13a3a2b07bfef0c59a64e7fedc2c
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.5.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -70,11 +110,35 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.2"
+  flutter_slidable:
+    dependency: "direct main"
+    description:
+      name: flutter_slidable
+      sha256: "6c68e1fad129b4b807b2218ef4cf7f7f6f61c5ec8861c990dc2278d9d03cb09f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
+  flutter_staggered_grid_view:
+    dependency: transitive
+    description:
+      name: flutter_staggered_grid_view
+      sha256: f0b6d8c0fa7b4b444985cdde68492c0138a4fb6fc57a641b24cb234b7ee0f5c4
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+  golden_toolkit:
+    dependency: transitive
+    description:
+      name: golden_toolkit
+      sha256: "111e913c99632d470fed8263900d64fd75ec1ca2997702e0b2c05f63649d5440"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.11.0"
   leak_tracker:
     dependency: transitive
     description:
@@ -131,6 +195,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.12.0"
+  ordered_set:
+    dependency: transitive
+    description:
+      name: ordered_set
+      sha256: "1bfaaaee0419e43ecc9eaebd410eb4bd5039657b72011de75ff3e2915c9aac60"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.0.3"
   path:
     dependency: transitive
     description:
@@ -139,6 +211,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.0"
+  reorderableitemsview:
+    dependency: "direct main"
+    description:
+      name: reorderableitemsview
+      sha256: "13f1a0394e158fea6f440557b2025bba7c61364885eaa9d71e1c4ba818c8d79c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -210,4 +290,4 @@ packages:
     version: "14.2.1"
 sdks:
   dart: ">=3.4.0 <4.0.0"
-  flutter: ">=3.18.0-18.0.pre.54"
+  flutter: ">=3.19.0"
