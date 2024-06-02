@@ -10,13 +10,13 @@ class CustomAppBar extends StatelessWidget {
           textAlign: TextAlign.center,
           text: const TextSpan(children: [
             TextSpan(
-                text: "Nombre",
+                text: "Wallpaper",
                 style: TextStyle(
                     color: Color.fromARGB(255, 165, 155, 17),
                     fontSize: 20,
                     fontWeight: FontWeight.w600)),
             TextSpan(
-                text: "App",
+                text: "Nova",
                 style: TextStyle(
                     color: Color.fromARGB(255, 255, 255, 255),
                     fontSize: 20,

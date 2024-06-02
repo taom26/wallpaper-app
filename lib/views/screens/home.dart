@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaper_app/views/screens/color_picker.dart';
 import 'package:wallpaper_app/views/screens/sprite_walking.dart';
 import 'package:wallpaper_app/views/screens/settings.dart';
 import 'package:wallpaper_app/views/widgets/CustomAppBar.dart';
@@ -13,12 +12,11 @@ class ExampleDestination {
 }
 
 const List<ExampleDestination> destinations = <ExampleDestination>[
+
   ExampleDestination(
-      'Colores', Icon(Icons.palette_outlined), Icon(Icons.palette)),
+      'Todos', Icon(Icons.home_outlined), Icon(Icons.home)),
   ExampleDestination(
-      'PJ Bounce', Icon(Icons.android_outlined), Icon(Icons.android)),
-  ExampleDestination(
-      'Wallpapers', Icon(Icons.wallpaper_outlined), Icon(Icons.wallpaper)),
+      'Categorias', Icon(Icons.category_outlined), Icon(Icons.category)),
 ];
 
 class HomeScreen extends StatefulWidget {
@@ -42,7 +40,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // Define the different pages
   final List<Widget> pages = [
-    const HomePage(),
     const TrendingPage(),
     const SettingsPage(),
   ];
