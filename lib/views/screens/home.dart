@@ -12,9 +12,7 @@ class ExampleDestination {
 }
 
 const List<ExampleDestination> destinations = <ExampleDestination>[
-
-  ExampleDestination(
-      'Todos', Icon(Icons.home_outlined), Icon(Icons.home)),
+  ExampleDestination('Todos', Icon(Icons.home_outlined), Icon(Icons.home)),
   ExampleDestination(
       'Categorias', Icon(Icons.category_outlined), Icon(Icons.category)),
 ];
