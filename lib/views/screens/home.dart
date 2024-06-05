@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaper_app/views/screens/sprite_walking.dart';
+import 'package:wallpaper_app/views/screens/previsualization.dart';
 import 'package:wallpaper_app/views/screens/settings.dart';
 import 'package:wallpaper_app/views/widgets/CustomAppBar.dart';
 
@@ -12,7 +12,7 @@ class ExampleDestination {
 }
 
 const List<ExampleDestination> destinations = <ExampleDestination>[
-  ExampleDestination('Todos', Icon(Icons.home_outlined), Icon(Icons.home)),
+  ExampleDestination('Inicio', Icon(Icons.home_outlined), Icon(Icons.home)),
   ExampleDestination(
       'Categorias', Icon(Icons.category_outlined), Icon(Icons.category)),
 ];
