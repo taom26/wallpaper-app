@@ -149,14 +149,12 @@ class FullscreenSliderDemo extends StatelessWidget {
               autoPlay: false,
             ),
             items: images
-                .map((item) => Container(
-                      child: Center(
-                          child: Image.network(
-                        item,
-                        fit: BoxFit.cover,
-                        height: height,
-                      )),
-                    ))
+                .map((item) => Center(
+                        child: Image.network(
+                      item,
+                      fit: BoxFit.cover,
+                      height: height,
+                    )))
                 .toList(),
           );
         },

@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -33,11 +35,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ],
             ),
           ),
-          const SizedBox(width: 8), 
+          const SizedBox(width: 8),
           Image.asset(
-            'assets/images/Okayu_Movement.png', 
-            height: 24, 
-            width: 24, 
+            'assets/images/Okayu_Movement.png',
+            height: 24,
+            width: 24,
           ),
         ],
       ),
