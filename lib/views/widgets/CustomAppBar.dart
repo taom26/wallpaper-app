@@ -35,12 +35,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ],
             ),
           ),
-          const SizedBox(width: 8),
-          Image.asset(
-            'assets/images/Okayu_Movement.png',
-            height: 24,
-            width: 24,
-          ),
         ],
       ),
       backgroundColor: Colors.transparent,
