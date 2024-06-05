@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:http/http.dart' as http;
-import 'dart:io';
-import 'dart:async';
-import 'package:flutter_wallpaper_manager/flutter_wallpaper_manager.dart';
 
 final List<String> marioImages = [
   'https://i.pinimg.com/564x/05/9c/65/059c6510af0bcc7096511c5a71447bd9.jpg',
@@ -47,10 +42,10 @@ class SettingsPage extends StatelessWidget {
         return MaterialApp(
           initialRoute: '/',
           darkTheme: ThemeData.dark(),
-          themeMode: ThemeMode.values.toList()[value as int],
+          themeMode: ThemeMode.values.toList()[value],
           debugShowCheckedModeBanner: false,
           routes: {
-            '/': (ctx) => CarouselDemoHome(),
+            '/': (ctx) => const CarouselDemoHome(),
             '/mario': (ctx) => FullscreenSliderDemo(images: marioImages),
             '/dragonball': (ctx) =>
                 FullscreenSliderDemo(images: dragonBallImages),
@@ -69,7 +64,7 @@ class SettingsPage extends StatelessWidget {
 class DemoItem extends StatelessWidget {
   final String title;
   final String route;
-  DemoItem(this.title, this.route);
+  const DemoItem(this.title, this.route, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -83,21 +78,23 @@ class DemoItem extends StatelessWidget {
 }
 
 class CarouselDemoHome extends StatelessWidget {
+  const CarouselDemoHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Categorias'),
+        title: const Text('Categorias'),
         actions: [
           IconButton(
-              icon: Icon(Icons.wallpaper_sharp),
+              icon: const Icon(Icons.wallpaper_sharp),
               onPressed: () {
                 themeMode.value = themeMode.value == 1 ? 2 : 1;
               })
         ],
       ),
       body: ListView(
-        children: <Widget>[
+        children: const <Widget>[
           DemoItem('Super Mario Bros', '/mario'),
           DemoItem('Dragon Ball Series', '/dragonball'),
           DemoItem('Vehiculos Geniales', '/cars'),
@@ -110,23 +107,24 @@ class CarouselDemoHome extends StatelessWidget {
 }
 
 class NoCenterDemo extends StatelessWidget {
+  const NoCenterDemo({super.key});
+
   @override
   Widget build(BuildContext context) {
     List<int> list = [1, 2, 3, 4, 5];
     return Scaffold(
-      appBar: AppBar(title: Text('Basic demo')),
-      body: Container(
-          child: CarouselSlider(
+      appBar: AppBar(title: const Text('Basic demo')),
+      body: CarouselSlider(
         options: CarouselOptions(
           disableCenter: true,
         ),
         items: list
             .map((item) => Container(
-                  child: Text(item.toString()),
                   color: Colors.green,
+                  child: Text(item.toString()),
                 ))
             .toList(),
-      )),
+      ),
     );
   }
 }
@@ -134,12 +132,12 @@ class NoCenterDemo extends StatelessWidget {
 class FullscreenSliderDemo extends StatelessWidget {
   final List<String> images;
 
-  FullscreenSliderDemo({required this.images});
+  const FullscreenSliderDemo({super.key, required this.images});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Fullscreen sliding carousel demo')),
+      appBar: AppBar(title: const Text('Fullscreen sliding carousel demo')),
       body: Builder(
         builder: (context) {
           final double height = MediaQuery.of(context).size.height;
@@ -168,5 +166,5 @@ class FullscreenSliderDemo extends StatelessWidget {
 }
 
 void main() {
-  runApp(SettingsPage());
+  runApp(const SettingsPage());
 }
