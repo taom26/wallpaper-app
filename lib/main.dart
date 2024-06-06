@@ -10,9 +10,9 @@ void main() async {
 }
 
 Future<void> requestPermissions() async {
-  var status = await Permission.storage.status;
+  var status = await Permission.manageExternalStorage.status;
   if (!status.isGranted) {
-    await Permission.storage.request();
+    Permission.manageExternalStorage.request();
   }
 }
 
