@@ -26,15 +26,22 @@ dependencies:
   permission_handler: ^11.3.1
   fluttertoast: ^8.0.9
   dio: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.jpg"
+
 flutter:
   assets:
     - assets/images/Okayu_Movement.png
     - assets/wallpapers.json
+    - assets/images/app_icon.jpg
 
   uses-material-design: true
