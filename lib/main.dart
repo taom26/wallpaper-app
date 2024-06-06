@@ -4,9 +4,16 @@ import 'package:wallpaper_app/views/screens/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Permission.storage.request();
+  await requestPermissions();
 
   runApp(const MyApp());
+}
+
+Future<void> requestPermissions() async {
+  var status = await Permission.storage.status;
+  if (!status.isGranted) {
+    await Permission.storage.request();
+  }
 }
 
 class MyApp extends StatelessWidget {

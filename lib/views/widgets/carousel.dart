@@ -30,7 +30,7 @@ class WallpaperCategory extends StatelessWidget {
             enlargeCenterPage: true,
             pageViewKey: PageStorageKey<String>('carousel_slider_$category'),
             autoPlay: true,
-            autoPlayInterval: const Duration(seconds: 2),
+            autoPlayInterval: const Duration(seconds: 3),
           ),
           items:
               images.map((item) => _buildCarouselItem(context, item)).toList(),
