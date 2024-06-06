@@ -36,7 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  // Define the different pages
   final List<Widget> pages = [
     const TrendingPage(),
     const SettingsPage(),
@@ -48,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const CustomAppBar(),
         backgroundColor: const Color.fromARGB(255, 61, 61, 61),
       ),
-      body: pages[screenIndex], // Display the selected page
+      body: pages[screenIndex],
       bottomNavigationBar: NavigationBar(
         selectedIndex: screenIndex,
         onDestinationSelected: (int index) {
@@ -104,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const VerticalDivider(thickness: 1, width: 1),
             Expanded(
-              child: pages[screenIndex], // Display the selected page
+              child: pages[screenIndex],
             ),
           ],
         ),
