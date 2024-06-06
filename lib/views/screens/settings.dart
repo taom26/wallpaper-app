@@ -102,12 +102,22 @@ final Map<String, List<String>> categories = {
   'Videojuegos': [
     'https://i.pinimg.com/564x/05/9c/65/059c6510af0bcc7096511c5a71447bd9.jpg',
     'https://i.pinimg.com/564x/64/f5/9f/64f59f2dbb5da050e4a6b7128e0cc7d0.jpg',
-    'https://i.pinimg.com/564x/a3/61/2a/a3612ac5e4135db5eee98e8c74ee8503.jpg'
+    'https://i.pinimg.com/564x/a3/61/2a/a3612ac5e4135db5eee98e8c74ee8503.jpg',
+    'https://cdn.discordapp.com/attachments/904396958737760337/992890519355142164/20220702_140724.jpg?ex=66621cda&is=6660cb5a&hm=aa787092dfa6f4548ed695b8926f6d22f12d72fc46e3286db640e4eb01784d45&'
+  ],
+  'Genshin Impact': [
+    'https://cdn.discordapp.com/attachments/904396958737760337/904396982997639209/yande-1.jpg?ex=6661dad3&is=66608953&hm=e218b04f97d1549c12469e97c34c2e11f41dcacbae7d058446af7bcf94f71e30&',
+    'https://cdn.discordapp.com/attachments/904396958737760337/932469436705804298/95304656_p0.jpg?ex=6661cf16&is=66607d96&hm=5998f04ec8ebd5695765ff9856f84afa2b43773e4d5e8855bfb9ce9c849d57f5&',
+    'https://cdn.discordapp.com/attachments/904396958737760337/988851582047236096/20220621_120304.jpg?ex=6661ebcd&is=66609a4d&hm=4fc562444469e843b77dd2af05efcc54a4357a543db166d6c42c8131eedea7cd&',
   ],
   'Anime': [
     'https://i.pinimg.com/564x/91/3e/3f/913e3fbf46a72424e37ff1b82031287d.jpg',
     'https://i.pinimg.com/736x/ff/8f/57/ff8f57cebf24b785026855817f243af1.jpg',
-    'https://i.pinimg.com/564x/ef/9d/74/ef9d74fb676c73e96bbf72af71faa333.jpg'
+    'https://i.pinimg.com/564x/ef/9d/74/ef9d74fb676c73e96bbf72af71faa333.jpg',
+    'https://cdn.discordapp.com/attachments/904396958737760337/904484333333651516/FB_IMG_1635700364465.jpg?ex=66622c2d&is=6660daad&hm=6b62c4ec63c5ea938eb87b3651fecf6bc380cd3080d69e7ea1e72caa50e4faf8&',
+    'https://cdn.discordapp.com/attachments/904396958737760337/945538061889048626/2.jpg?ex=6661e431&is=666092b1&hm=2978b635e7e193924d4140dd95bc35fa4ee996deaee1370fc284c9a486961844&',
+    'https://cdn.discordapp.com/attachments/904396958737760337/983906164993581106/95736329_p0.jpg?ex=6661ba45&is=666068c5&hm=e10ec5f5ebd406f7b2a0b377ba2db078153159a9c6de1672520368462ef0f44a&',
+    ''
   ],
   'Aesthetic': [
     'https://i.pinimg.com/564x/91/3e/3f/913e3fbf46a72424e37ff1b82031287d.jpg',
