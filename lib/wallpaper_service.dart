@@ -6,7 +6,6 @@ import 'package:path_provider/path_provider.dart';
 
 class WallpaperService {
   Future<void> setWallpaper(String imageUrl) async {
-    // Solicitar permisos de almacenamiento
     var status = await Permission.storage.status;
     if (!status.isGranted) {
       status = await Permission.storage.request();
@@ -14,13 +13,10 @@ class WallpaperService {
 
     if (status.isGranted) {
       try {
-        // Descargar la imagen
         var dio = Dio();
         var dir = await getExternalStorageDirectory();
         String savePath = "${dir!.path}/${imageUrl.split('/').last}";
         await dio.download(imageUrl, savePath);
-
-        // Establecer el fondo de pantalla
         bool result = await WallpaperManager.setWallpaperFromFile(
             savePath, WallpaperManager.HOME_SCREEN);
 
