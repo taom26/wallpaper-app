@@ -32,5 +32,6 @@ dev_dependencies:
 flutter:
   assets:
     - assets/images/Okayu_Movement.png
+    - assets/wallpapers.json
 
   uses-material-design: true
